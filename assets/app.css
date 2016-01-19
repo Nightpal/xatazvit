@@ -1,0 +1,427 @@
+body,
+html {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.webixappstart {
+    opacity: 0;
+}
+
+.webixapp {
+    transition: opacity 500ms;
+    opacity: 1;
+}
+
+
+/*data loading status*/
+
+.status_good,
+.status_error,
+.status_saving {
+    text-align: center;
+    margin-left: -12px;
+}
+
+.status_error {
+    color: red;
+}
+
+.status_good {
+    color: green;
+}
+
+
+/*login form*/
+
+.invalid_login .webix_header > div {
+    background: #FC3636;
+    transition: background 1s;
+}
+
+.invalid_login {
+    -webkit-animation: formshake .5s linear;
+}
+
+@-webkit-keyframes formshake {
+    8%,
+    41% {
+        -webkit-transform: translateX(-10px);
+    }
+    25%,
+    58% {
+        -webkit-transform: translateX(10px);
+    }
+    75% {
+        -webkit-transform: translateX(-5px);
+    }
+    92% {
+        -webkit-transform: translateX(5px);
+    }
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+.app-col-desc {
+    font-size: 8pt;
+    color: #888;
+}
+
+.app-text-right {
+    text-align: right;
+}
+
+.app-text-center {
+    text-align: center;
+}
+
+.app-text-left {
+    text-align: left;
+}
+
+.app-text-justify {
+    text-align: justify;
+}
+
+.app-pullright {
+    float: right;
+}
+
+.app-menu-delimiter {
+    background: rgba(178, 178, 178, 0.3) !important;
+    font-weight: bold;
+    font-size: 9pt;
+    height: 30px !important;
+    margin-top: 5px !important;
+}
+
+.app-left-panel {
+    background-color: rgba(215, 215, 215, 0.6);
+    margin-top: 4px!important;
+}
+
+.app-left-menu {
+    margin-top: 3px !important;
+    border-radius: 0px !important;
+    background: transparent !important;
+}
+
+.app-left-menu .webix_list_item.webix_selected {
+    border-left: 6px solid #333;
+    background-color: rgba(195, 195, 195, 0.7) !important;
+}
+
+.app-left-menu .webix_list_item:hover {
+    background-color: rgba(195, 195, 195, 0.7) !important;
+}
+
+.app-left-menu .webix_list_item {
+    color: #333;
+    margin-left: 2px !important;
+    background-color: transparent !important;
+    border-left: 6px solid transparent;
+}
+
+.app-transp-panel {
+    background-color: transparent;
+    color: #fff;
+    text-align: right;
+}
+
+.app-logo .webix_img_btn_abs.webixtype_base {
+    border: 0px !important;
+    font-size: 12pt;
+}
+
+
+/* sync status */
+
+.status_good {
+    color: #ddd;
+}
+
+red {
+    color: orangered;
+}
+
+green {
+    color: #00dd00;
+}
+
+blue {
+    color: #66acfc;
+}
+
+.app-currency-usd {
+    background-color: #B8E49C;
+}
+
+.app-currency-eur {
+    background-color: skyblue;
+}
+
+.app-currency-cell {
+    font-size: 10.7pt;
+}
+
+.app-user-role-0 {
+    color: black;
+}
+
+.app-user-role-1 {
+    color: green;
+}
+
+.app-user-role-2 {
+    color: darkgrey;
+}
+
+.app-user-role--2 {
+    color: #d46c13;
+}
+
+.app-disabled {
+    color: lightgray;
+}
+
+.webix_hcell {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.webix_dtable .webix_ss_filter select,
+.webix_dtable .webix_ss_filter input {
+    height: 24px;
+    vertical-align: middle;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.webix_el_richselect input,
+.webix_el_datepicker input,
+.webix_el_colorpicker input,
+.webix_el_dbldatepicker input,
+.webix_el_richselect .webix_inp_static,
+.webix_el_datepicker .webix_inp_static,
+.webix_el_colorpicker .webix_inp_static,
+.webix_el_dbldatepicker .webix_inp_static {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.webix_el_combo span.webix_input_icon,
+.webix_el_richselect span.webix_input_icon,
+.webix_el_datepicker span.webix_input_icon,
+.webix_el_colorpicker span.webix_input_icon,
+.webix_el_dbldatepicker span.webix_input_icon {
+    background-color: rgba(0, 0, 0, 0.51);
+    color: #ffffff;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.webix_accordionitem_header {
+    border-bottom: 1px solid #dddddd;
+    position: relative;
+    z-index: 2;
+    color: #585858;
+    font-size: 15px;
+    background: #D7D7D7;
+    line-height: 26px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.webix_accordionitem.horizontal.collapsed .webix_accordionitem_header,
+.webix_accordionitem.collapsed .webix_accordionitem_header {
+    background-color: #F4F4F4;
+    color: #939393;
+}
+
+.webix_el_text .webix_inp_static {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.app-complex-combo {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.app-cancel-filters .image {
+    opacity: 0.6;
+    background-image: url(img/filterclear.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80%;
+    width: 100%;
+}
+
+.app-cancel-filters button {
+    background: transparent !important;
+    border: 0px !important;
+}
+
+.app-loading-view {
+    background-image: url(img/loading.gif);
+    width: 207px;
+    height: 129px;
+    display: inline-block;
+    z-index: 100;
+    opacity: 0.94;
+    vertical-align: middle;
+    background-position: center 40%;
+    background-size: 60px;
+    text-align: center;
+    line-height: 180px;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    border: 5px solid rgba(227, 230, 225, 0.33);
+}
+
+.app-multi-tree .webix_tree_item.webix_selected span {
+    color: #000 !important;
+    background: #eee !important;
+}
+
+.webix_multicombo_value .webix_tree_open,
+.webix_multicombo_value .webix_tree_close,
+.webix_multicombo_value .webix_tree_none,
+.webix_multicombo_value .webix_tree_folder,
+.webix_multicombo_value .webix_tree_file,
+.webix_multicombo_value .webix_tree_folder_open {
+    display: none;
+}
+
+.webix_column > div.webix_cell_select,
+.webix_column > div.webix_column_select,
+.webix_column > div.webix_row_select {
+    color: #000;
+    background: #E7FBD1;
+}
+
+.webix_sidebar .webix_tree_item.webix_selected,
+.webix_sidebar .webix_tree_item.webix_selected span {
+    background-color: #EAEAEA !important;
+    color: #000;
+}
+
+.webix_dtable_colrow,
+.webix_dtable_subrow,
+.webix_dtable_subview {
+    background-color: #F1F1F1;
+}
+
+.app-was-edited {
+    background-color: rgba(255, 221, 171, 0.5) !important;
+}
+
+.app-fa-user-0:before {
+    content: "\f007";
+}
+
+.app-fa-user-1:before {
+    content: "\f005";
+}
+
+.app-fa-user-2:before {
+    content: "\f21b";
+}
+
+.app-fa-user--2:before {
+    content: "\f21b";
+}
+
+.app-form-header {
+    background-color: #EAEAEA;
+    font-weight: bold;
+    font-size: 10.5pt;
+    color: #706B6B;
+    border: 1px solid #C7C7C7;
+}
+
+.app-form-header span {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.webix_el_search input,
+.webix_el_text input,
+.webix_el_combo input {
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.webix_el_select select,
+.webix_el_textarea textarea {
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.webix_el_button input,
+.webix_el_toggle input,
+.webix_el_button button,
+.webix_el_toggle button,
+.webixbutton {
+    border-radius: 1px;
+}
+
+.app-status-green {
+    color: #fff;
+    font-size: 12pt;
+    background-color: rgba(138, 190, 56, 0.61);
+    opacity: 0;
+    -webkit-transition: opacity 2.5s ease-out 0.5s;
+    -moz-transition: opacity 2.5s ease-out 0.5s;
+    -o-transition: opacity 2.5s ease-out 0.5s;
+    transition: opacity 2.5s ease-out 0.5s;
+}
+
+.app-status-green.app-visible {
+    -webkit-transition: opacity 0.1s ease-out 0.1s;
+    -moz-transition: opacity 0.1s ease-out 0.1s;
+    -o-transition: opacity 0.1s ease-out 0.1s;
+    transition: opacity 0.1s ease-out 0.1s;
+    opacity: 1;
+}
+
+.app-not-yconfirmed-row {
+    background-color: rgba(141, 0, 21, 0.39);
+}
+
+.app-not-confirmed-row {
+    background-color: rgba(253, 136, 154, 0.36);
+}
+
+.webix_organogram_level_4 {
+    background-color: rgba(255, 220, 142, 0.69);
+}
+
+.webix_organogram_list_item:before {
+    font-family: 'FontAwesome';
+    content: "\f0da";
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.app-title-description {
+    color: rgb(160, 150, 150);
+    font-size: 10pt;
+}
+
+.app-title-description sup {
+    color: rgba(230, 10, 10, 0.7);
+    font-size: 8pt;
+}
