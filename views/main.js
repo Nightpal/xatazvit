@@ -9,7 +9,7 @@ define(["app"], function (app) {
             {
                 id: "bidblock",
                 icon: "plug",
-                value: "підключення",
+                value: "підключення2",
                 data: [{
                         value: "+Оформити",
                         id: "newbid",
